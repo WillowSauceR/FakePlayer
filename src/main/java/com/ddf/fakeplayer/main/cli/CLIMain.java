@@ -69,8 +69,8 @@ public class CLIMain extends Main {
         clients.forEach(client -> {
             // 如果上一次退出前是在线状态，则connect
             // 否则不自动连接
-            if(config.getPlayerData(client.getPlayerName()).getOnlineStatus())
-                client.connect(config.getServerAddress(), config.getServerPort());
+            //if(config.getPlayerData(client.getPlayerName()).getOnlineStatus())
+            client.connect(config.getServerAddress(), config.getServerPort());
         });
 
         logger.log("启动完成，输入help或?可查看帮助");
